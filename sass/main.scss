@@ -1,0 +1,31 @@
+@import "./untils/variables";
+@import "./untils/hidden";
+@import "./base/section";
+@import "./base/container";
+@import "./base/resrt";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./components/address";
+@import "./components/contacts";
+@import "./components/logo";
+@import "./components/site-nav";
+@import "./components/social";
+@import "./components/footer_form";
+
+@import "./layout/hero.scss";
+
+@import "./layout/benefits.scss";
+
+@import "./layout/activity.scss";
+
+@import "./layout/team.scss";
+@import "./components/team-card.scss";
+@import "./components/card-set.scss";
+
+@import "./layout/clients";
+
+@import "./components/backdrop";
+@import "./components/modal";
+
+@import "./layout/portfolio";
