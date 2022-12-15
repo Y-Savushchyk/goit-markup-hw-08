@@ -1,0 +1,10 @@
+.card-set {
+  text-align: center;
+  &__item {
+    @media screen and(max-width:767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

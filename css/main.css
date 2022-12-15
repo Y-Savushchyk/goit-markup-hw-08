@@ -25,12 +25,26 @@
 }
 
 .container {
+  outline: 1px solid red;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /*outline: 1px solid red;*/
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 html {
@@ -85,6 +99,255 @@ img {
 }
 
 .section {
-  width: 1600px;
   margin: auto;
+}
+
+.logo {
+  outline: 1px solid red;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+}
+.logo__accent {
+  color: var(--accent-color);
+}
+
+.card-set {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .card-set__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.social {
+  outline: 1px solid red;
+  padding-top: 12px;
+}
+.social__text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.social__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.social__item {
+  margin-right: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.social__item:last-child {
+  margin-right: 0px;
+}
+.social__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  -webkit-transition-property: background-color, fill;
+  transition-property: background-color, fill;
+  -webkit-transition-duration: var(--primary-duration);
+          transition-duration: var(--primary-duration);
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.social__link:hover, .social__link:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+.social__icon {
+  margin: auto;
+}
+
+.team__social {
+  padding: 0;
+}
+
+.team-card {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 0px;
+}
+.team-card__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.team-card__title {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+}
+.team-card__text {
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1199px) {
+  .benefits__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.benefits__list {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -15px;
+  }
+}
+.benefits__item {
+  outline: 1px solid red;
+}
+@media screen and (max-width: 767px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
+  }
+}
+.benefits__icon-box {
+  margin-bottom: 30px;
+  background-color: var(--primary-buttonbg-color);
+  border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .benefits__icon-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__icon-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+.benefits__lable {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.benefits__text {
+  text-align: start;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
+}
+.activity .activity__container {
+  padding-bottom: 94px;
+}
+.activity .activity__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.activity .activity__item {
+  position: relative;
+  margin-right: 30px;
+}
+.activity .activity__item:last-child {
+  margin-right: 0px;
+}
+.activity .activity__title {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+}
+.activity .activity__text-box {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.activity .activity__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.team {
+  background-color: var(--primary-buttonbg-color);
 }/*# sourceMappingURL=main.css.map */
