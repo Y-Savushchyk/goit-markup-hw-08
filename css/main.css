@@ -511,7 +511,7 @@ img {
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav {
     margin-bottom: 302px;
   }
@@ -1363,4 +1363,140 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
+}
+
+.projects__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.project-nav {
+  margin-left: 312px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 34px;
+}
+.project-nav__item {
+  margin-right: 8px;
+}
+.project-nav__item:last-child {
+  margin-right: 0px;
+}
+.project-nav__filter {
+  padding: 6px 22px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--primary-title-color);
+  background-color: var(--primary-buttonbg-color);
+  -webkit-transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: var(--primary-duration);
+          transition-duration: var(--primary-duration);
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.project-nav__filter:hover, .project-nav__filter:focus {
+  padding: 6px 22px;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.projects-card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+.projects-card-set__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projects-card-set__link:hover .card__over, .projects-card-set__link:focus .card__over {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.projects-card-set__link:hover .card__content, .projects-card-set__link:focus .card__content {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card {
+  width: 370px;
+}
+.card__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.card__content {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  text-align: left;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: var(--primary-duration);
+          transition-duration: var(--primary-duration);
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.card__content__title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-title-color);
+}
+.card__content__text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.card__over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition-duration: var(--primary-duration);
+          transition-duration: var(--primary-duration);
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+  pointer-events: none;
+}
+.card__over__text {
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-align: start;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
