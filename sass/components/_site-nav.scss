@@ -1,23 +1,25 @@
-.site-nav{
+.site-nav {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 302px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 87px;
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
-@media screen and (min-width:768px) {
-    margin-left: 87px;
-    
-}
-@media screen and (min-width:1200px) {
+  }
+  @media screen and (min-width: 1200px) {
     margin-left: 92px;
-    
-}
-@media screen and (max-width:767px) {
-    display: none;
-            }
+  }
 
-
-
-&__item {
+  &__item {
     margin-right: 50px;
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 36px;
+      }
+    }
   }
   &__item:last-child {
     margin-right: 0px;
@@ -33,6 +35,14 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    @media screen and (max-width: 767px) {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+
     transition-property: color;
     transition-duration: var(--primary-duration);
     transition-timing-function: var(--timing-function);
@@ -43,15 +53,12 @@
     position: absolute;
     left: 0;
     // bottom: -2px;
-    @media screen and (min-width:768px) {
-        bottom: -10px;
-        
+    @media screen and (min-width: 768px) {
+      bottom: -10px;
     }
-    @media screen and (min-width:1200px) {
-        bottom: -10px;
-        
+    @media screen and (min-width: 1200px) {
+      bottom: -10px;
     }
-
 
     display: block;
     width: 100%;
@@ -64,12 +71,13 @@
     transition-duration: var(--primary-duration);
     transition-timing-function: var(--timing-function);
   }
-
-  &__link__active::after,
-  &__link:hover::after,
-  &__link:focus::after {
-    opacity: 1;
-    transform: scale(1, 1);
+  @media screen and (min-width: 768px) {
+    &__link__active::after,
+    &__link:hover::after,
+    &__link:focus::after {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
   }
   &__link:hover,
   &__link:focus,
