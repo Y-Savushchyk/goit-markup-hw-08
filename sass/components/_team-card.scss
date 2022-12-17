@@ -25,4 +25,12 @@
   &__text {
     margin-bottom: 16px;
   }
+  &__img {
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
 }

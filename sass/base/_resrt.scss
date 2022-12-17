@@ -32,8 +32,10 @@ p {
   padding: 0;
 }
 img {
-  /*display: block;*/
-  vertical-align: top;
+  display: block;
+  // vertical-align: top;
+  // width: 100%;
+  // height: auto;
 }
 .button {
   border-radius: 4px;

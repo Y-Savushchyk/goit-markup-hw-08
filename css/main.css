@@ -87,8 +87,7 @@ p {
 }
 
 img {
-  /*display: block;*/
-  vertical-align: top;
+  display: block;
 }
 
 .button {
@@ -237,6 +236,16 @@ img {
 }
 .team-card__text {
   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .team-card__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card__img {
+    width: 270px;
+  }
 }
 
 .modal {
