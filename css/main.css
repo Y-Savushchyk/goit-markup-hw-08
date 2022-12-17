@@ -759,6 +759,8 @@ img {
   height: 100vh;
   background-color: white;
   z-index: 999;
+  opacity: 0;
+  pointer-events: none;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition-property: -webkit-transform;
@@ -772,6 +774,8 @@ img {
 }
 
 .menu-container.is-open {
+  opacity: 1;
+  pointer-events: all;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -1049,6 +1053,12 @@ img {
 @media screen and (min-width: 1200px) {
   .team__title {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .team-card__img {
+    width: 100%;
   }
 }
 

@@ -44,6 +44,9 @@
   background-color: #ffff;
   z-index: 999;
 
+
+opacity: 0;
+pointer-events: none;
   transform: translateX(100%);
   transition-property: transform;
   transition-duration: var(--primary-duration);
@@ -51,7 +54,10 @@
 }
 
 .menu-container.is-open {
+  opacity: 1;
+  pointer-events: all;
   transform: translateX(0);
+
 }
 
 .menu-container .menu-toggle {

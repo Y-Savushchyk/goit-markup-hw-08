@@ -26,3 +26,9 @@
     }
   }
 }
+.team-card__img{
+  @media screen and (max-width:479px) {
+    width: 100%;
+    
+  }
+}
